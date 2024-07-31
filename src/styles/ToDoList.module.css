@@ -1,0 +1,206 @@
+
+/* Container */
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Search Bar */
+.searchBar {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Task Form */
+.taskForm {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskForm input,
+.taskForm textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.taskForm button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskForm button:hover {
+  background-color: #45a049;
+}
+
+/* Task List */
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Task Item */
+.taskItem {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskItem.completed {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.taskItem h3 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.taskItem div {
+  margin-top: 10px;
+}
+
+.taskItem button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskItem button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+.taskItem button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+.taskItem button:hover {
+  background-color: #cccccc;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .taskForm input,
+  .taskForm textarea {
+    width: calc(100% - 16px);
+  }
+
+  .searchBar {
+    width: calc(100% - 16px);
+  }
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .task-form {
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  .task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .task-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+  }
+  
+  .task-item h3 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .task-item div {
+    margin-top: 10px;
+  }
+  
+  .task-item button {
+    margin-right: 10px;
+  }
+  
+  .task-item button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+  }
